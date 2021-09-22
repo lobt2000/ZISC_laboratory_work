@@ -1,0 +1,38 @@
+<main class="menu">
+  <section class="menu-items w-100">
+    <div class="general-title">Laboratory work</div>
+    <div class="menu-items__box w-100" routerLinkActive="select-item" [routerLink]="[ 'cezar' ]">
+      <div class="menu-items__box--contain" routerLinkActive="select-contain" [routerLink]="[ 'cezar' ]">
+        <span routerLinkActive="active"></span>
+        <!-- <span aria-hidden="true" class="icon m-l-15 m-r-8" [class]="'icon-paste'"></span> -->
+        <p class="title">Cezar</p>
+      </div>
+    </div>
+    <div class="menu-items__box w-100 flex nowrap jcc aic" routerLinkActive="select-item" [routerLink]="[ 'rotation' ]">
+      <div class="menu-items__box--contain w-100 flex nowrap aic" routerLinkActive="select-contain"
+        [routerLink]="[ 'rotation' ]">
+        <span routerLinkActive="active"></span>
+        <!-- <span aria-hidden="true"  class="icon m-l-15 m-r-8" [class]="'icon-conversation'"></span> -->
+        <p class="title">Rotation</p>
+      </div>
+    </div>
+    <div class="menu-items__box w-100 flex nowrap jcc aic" routerLinkActive="select-item"
+      [routerLink]="[ 'decodeCezar' ]">
+      <div class="menu-items__box--contain w-100 flex nowrap aic" routerLinkActive="select-contain"
+        [routerLink]="[ 'decodeCezar' ]">
+        <span routerLinkActive="active"></span>
+        <!-- <span aria-hidden="true"  class="icon m-l-15 m-r-8" [class]="'icon-conversation'"></span> -->
+        <p class="title">Decode Cezar</p>
+      </div>
+    </div>
+    <div class="menu-items__box w-100 flex nowrap jcc aic" routerLinkActive="select-item"
+      [routerLink]="[ 'stenography' ]">
+      <div class="menu-items__box--contain w-100 flex nowrap aic" routerLinkActive="select-contain"
+        [routerLink]="[ 'stenography' ]">
+        <span routerLinkActive="active"></span>
+        <!-- <span aria-hidden="true"  class="icon m-l-15 m-r-8" [class]="'icon-conversation'"></span> -->
+        <p class="title">Stenography</p>
+      </div>
+    </div>
+  </section>
+</main>

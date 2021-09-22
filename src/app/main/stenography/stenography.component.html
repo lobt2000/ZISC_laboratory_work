@@ -1,0 +1,37 @@
+<section class="content-box">
+  <div class="file-box">
+    <div class="sourse-file">
+      <p>Sourse image:</p>
+      <p class="without-img" *ngIf="!encodeImg">Choose you file for encoding <br> Click on the button below </p>
+      <img [src]="encodeImg" *ngIf="encodeImg" alt="">
+    </div>
+    <div class="encode-box">
+      <textarea name="" id="" cols="30" rows="10" [(ngModel)]="encodeText"></textarea>
+      <button class="btn" [disabled]="!(encodeText && encodeImg)" (click)="hideText()">Encode message into
+        image</button>
+    </div>
+    <div class="result-file">
+      <p>Encode image:</p>
+      <p class="without-img" *ngIf="!encodeResult">First upload encode file</p>
+      <img id="image2" [src]="encodeResult" *ngIf="encodeResult" alt="">
+    </div>
+  </div>
+  <div class="button">
+    <div class="input__upload">
+      <div class="upload-btn-wrapper">
+        <button class="btn">Upload encode file</button>
+        <input type="file" name="img" id="" accept="image/*" (change)="readURL($event.target)">
+      </div>
+    </div>
+    <div class="result-box">
+      <h3>Decode text:</h3>
+      <p class="decoded"> {{decodeText}}</p>
+    </div>
+    <!-- <div class="input__upload"> -->
+    <!-- <div class="upload-btn-wrapper"> -->
+    <button class="decode-button" [disabled]="!encodeResult" (click)="decode()">Decode</button>
+    <!-- <input type="file" name="img1" id="" accept="image/" (change)="decode($event.target)"> -->
+    <!-- </div> -->
+    <!-- </div> -->
+  </div>
+</section>
