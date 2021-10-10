@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AlgorizmComponent } from './main/algorizm/algorizm.component';
 import { DecodeCezarComponent } from './main/decode-cezar/decode-cezar.component';
+import { FeistelNetworkComponent } from './main/feistel-network/feistel-network.component';
 import { RotationComponent } from './main/rotation/rotation.component';
 import { StenographyComponent } from './main/stenography/stenography.component';
 
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'rotation', component: RotationComponent },
   { path: 'decodeCezar', component: DecodeCezarComponent },
   { path: 'stenography', component: StenographyComponent },
+  { path: 'feistel-network', component: FeistelNetworkComponent },
 ];
 
 @NgModule({

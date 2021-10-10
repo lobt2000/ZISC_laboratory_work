@@ -32,17 +32,6 @@ export class AlgorizmComponent implements OnInit {
   }
 
   codeAlgorizm() {
-    // if (this.textValue && this.textValue.split("").some(res => (this.alphabetLover.includes(res) || this.alphabetUpper.includes(res))) && this.textValue.split("").some(res => !this.isCharacterALetter(res))) {
-    //   console.log(this.textValue.split("").some(res => this.isCharacterALetter(res)));
-
-    //   this.coding_result = this.textValue.split("").map(res => this.alphabetLover.includes(res) ? this.alphabetLover[(this.alphabetLover.indexOf(res) + (this.variantValue || 13)) % this.alphabetLover.length - 1] : this.alphabetUpper[(this.alphabetUpper.indexOf(res) + (this.variantValue || 13)) % this.alphabetUpper.length - 1]).join("")
-    // } else if (!this.textValue) {
-    //   alert('Please write text into textarea')
-    // } else if(this.textValue.split("").some(res => this.abc.includes(res.toLowerCase()))) {
-
-    //   this.coding_result = this.textValue.split("").map(res => this.abc.includes(res) ? this.abc[(this.abc.indexOf(res) + (this.variantValue || 13)) % this.abc.length - 1] : res).join("")
-    // } 
-    // else alert('Please write correct text into textarea')
     if (this.textValue && this.textValue.toLowerCase().split("").some(res => (this.alphabetLover.includes(res))) && this.textValue.split("").some(res => !this.isCharacterALetter(res))) {
       this.coding_result = this.textValue.toLowerCase().split("").map(res => this.alphabetLover.includes(res) ? this.alphabetLover[(this.alphabetLover.indexOf(res) + (+this.variantValue)) % this.alphabetLover.length] : res).join("")
     } else if (!this.textValue) {

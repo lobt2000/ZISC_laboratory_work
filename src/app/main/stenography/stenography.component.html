@@ -27,11 +27,12 @@
       <h3>Decode text:</h3>
       <p class="decoded"> {{decodeText}}</p>
     </div>
-    <!-- <div class="input__upload"> -->
-    <!-- <div class="upload-btn-wrapper"> -->
-    <button class="decode-button" [disabled]="!encodeResult" (click)="decode()">Decode</button>
-    <!-- <input type="file" name="img1" id="" accept="image/" (change)="decode($event.target)"> -->
-    <!-- </div> -->
-    <!-- </div> -->
+    <div class="input__upload">
+      <div class="upload-btn-wrapper">
+        <button class="btn" [disabled]="!encodeResult">Decode</button>
+        <input type="file" name="img1" id="" accept="image/" [disabled]="!encodeResult"
+          (change)="decode($event.target)">
+      </div>
+    </div>
   </div>
 </section>

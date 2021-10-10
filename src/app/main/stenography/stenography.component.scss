@@ -231,22 +231,22 @@
 
     }
 
-    .decode-button {
-      width: 20%;
-      border: 2px solid #fe8c00;
-      color: white;
-      background: #fe8c00;
-      /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
-      /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, #f83600, #fe8c00);
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // .decode-button {
+    //   width: 20%;
+    //   border: 2px solid #fe8c00;
+    //   color: white;
+    //   background: #fe8c00;
+    //   /* fallback for old browsers */
+    //   background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    //   /* Chrome 10-25, Safari 5.1-6 */
+    //   background: linear-gradient(to right, #f83600, #fe8c00);
+    //   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-      padding: 8px 20px;
-      border-radius: 8px;
-      font-size: 20px;
-      font-weight: bold;
-      transition: background .250s linear, color .250s linear, border .250s linear;
-    }
+    //   padding: 8px 20px;
+    //   border-radius: 8px;
+    //   font-size: 20px;
+    //   font-weight: bold;
+    //   transition: background .250s linear, color .250s linear, border .250s linear;
+    // }
   }
 }

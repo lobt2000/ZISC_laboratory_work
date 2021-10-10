@@ -33,15 +33,25 @@ export class StenographyComponent implements OnInit {
   hideText() {
     console.log('dfadsf');
     this.encodeResult = steg.encode(this.encodeText, this.encodeImg);
+    var element = document.createElement('a');
+        element.setAttribute('href', this.encodeResult);
+        element.setAttribute('download', 'output.bmp');
+
+        element.style.display = 'none';
+        document.body.appendChild(element);
+
+        element.click();
+
+        document.body.removeChild(element);
   }
 
-  decode() {
-    // var reader = new FileReader();
-    // reader.onload = (e) => {
-    // console.log(e.target.result);
+  decode(input) {
+    var reader = new FileReader();
+    reader.onload = (e) => {
+    console.log(e.target.result);
     this.decodeText += steg.decode(this.encodeResult);
-    // }
-    // reader.readAsDataURL(input.files["0"]);
+    }
+    reader.readAsDataURL(input.files["0"]);
 
   }
 }

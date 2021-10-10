@@ -9,6 +9,7 @@ import { MenuComponent } from './component/menu/menu.component';
 import { RotationComponent } from './main/rotation/rotation.component';
 import { DecodeCezarComponent } from './main/decode-cezar/decode-cezar.component';
 import { StenographyComponent } from './main/stenography/stenography.component';
+import { FeistelNetworkComponent } from './main/feistel-network/feistel-network.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StenographyComponent } from './main/stenography/stenography.component';
     MenuComponent,
     RotationComponent,
     DecodeCezarComponent,
-    StenographyComponent
+    StenographyComponent,
+    FeistelNetworkComponent
   ],
   imports: [
     BrowserModule,

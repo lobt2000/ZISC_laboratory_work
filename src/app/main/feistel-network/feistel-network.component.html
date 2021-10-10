@@ -1,0 +1,23 @@
+<section class="container">
+  <h2 class="title">Feistel network</h2>
+  <div class="textBlock-content">
+    <textarea name="" id="" cols="30" rows="10" [(ngModel)]="EncodeKeyWord"
+      placeholder="Write your code here..."></textarea>
+    <textarea name="" id="" cols="30" rows="10" [(ngModel)]="DecodeKeyWord"
+      placeholder="Write your code here..."></textarea>
+  </div>
+  <div class="algorizm-button">
+    <div class="input__upload">
+      <div class="upload-btn-wrapper">
+        <button class="btn">Upload file for encode</button>
+        <input type="file" id="" (change)="readFileForEncode($event.target)">
+      </div>
+    </div>
+    <div class="input__upload">
+      <div class="upload-btn-wrapper">
+        <button class="btn">Upload file for decode </button>
+        <input type="file" id="" (change)="readFileForDecode($event.target)">
+      </div>
+    </div>
+  </div>
+</section>

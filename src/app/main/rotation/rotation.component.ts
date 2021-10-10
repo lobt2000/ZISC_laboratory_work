@@ -22,8 +22,6 @@ export class RotationComponent implements OnInit {
       for (let index = 0; index < (this.stairsValue || 2); index++) {
         arr.push(this.textValue.split(' ').join('').split('').filter((res, j) => (j % this.stairsValue) == index));
       }
-      console.log(arr);
-
       this.coding_result = arr.map(res => res.join('')).join('');
     }
     else alert('Please write correct text into textarea')
